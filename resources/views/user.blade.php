@@ -1,13 +1,17 @@
-<html>
-<strong>
-<marquee>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User</title>
+</head>
+<body>
+    {{$username}}
 
-<?php
-echo $username;
-?>
-
-</marquee>
-</strong>
-
+    @if($username == 'renato')
+        <h1>O dono</h1>
+    @elseif($username == 'alves')
+        <h1>O sobrenome do O dono</h1>
+    @endif
+</body>
 </html>
-

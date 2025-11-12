@@ -2,27 +2,28 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\testRequest;
 use Illuminate\Http\Request;
 
 class UsersController extends Controller
 {
 
-    public function test(Request $request)
-    {
-        $request->validate([
-            'nome' => 'required'
-        ]);
-    }
+    // public function test(Request $request)
+    // {
+    //     $request->validate([
+    //         'nome' => 'required'
+    //     ]);
+    // }
 
-    public function getProfileMe()
-    {
-        $username = 'Renato';
-         return view('user', compact( 'username'));
-    }
+    // public function getProfileMe()
+    // {
+    //     $username = 'Renato';
+    //      return view('user', compact( 'username'));
+    // }
 
-    public function getProfile(string $username)
-    {
-         return view('user', compact('username'));
-    }
+    // public function getProfile(string $username)
+    // {
+    //      return view('user', compact('username'));
+    // }
 
 }
