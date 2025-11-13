@@ -10,7 +10,7 @@ class LandingController extends Controller
 
     public function getLandingPage()
     {
-        return view('layout');
+        return view('welcome');
     }
 
     public function getAboutPage()
